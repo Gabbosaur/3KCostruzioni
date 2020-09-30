@@ -2587,24 +2587,61 @@ input, select, textarea {
 		}
 
 /* Image */
+	/* start by gab */
+	/* Grid Filter section - Clear floats after rows */
+
+	.row:after {
+		content: "";
+		display: table;
+		clear: both;
+	}
+
+	.column {
+		float: left;
+		display: none; /* Hide columns by default */
+	  }
+	
+	.show {
+		display: block;
+	}
+
+	.imageContainer {
+		margin: 2em 0;
+		height: 250px;
+		overflow: hidden;
+
+	}
+
+	.imageContainer img {
+		transition: transform .5s ease;
+		height: 100%;
+		object-fit: cover;
+	}
+
+	.imageContainer:hover img {
+		transform: scale(1.1);
+	}
+
+	/* end by gab */
 
 	.image {
-		border: 0;
 		display: inline-block;
-		position: relative;
+		position: relative;		
 	}
 
 		.image img {
 			display: block;
+			width: 100%;
+			margin: 2.5rem 0;
 		}
 
 		.image.left, .image.right {
 			max-width: 40%;
 		}
 
-			.image.left img, .image.right img {
-				width: 100%;
-			}
+		.image.left img, .image.right img {
+			width: 100%;
+		}
 
 		.image.left {
 			float: left;
@@ -2621,8 +2658,24 @@ input, select, textarea {
 		.image.fit {
 			display: block;
 			margin: 2.5rem 0;
+			transition: transform .5s ease;
+		}
+
+		.image.fit img {
+			height: 100%;
+
+		}
+
+		.image.fit:hover {
+			transform: scale(1.05);
+		}
+
+		.image.banner {
+			transform: scale(1.125);
 			width: 100%;
 		}
+
+
 
 			.image.fit:first-child {
 				margin-top: 0;
@@ -2647,6 +2700,14 @@ input, select, textarea {
 			}
 
 		@media screen and (max-width: 736px) {
+
+			.imageContainer {
+				margin: 2rem 0;
+			}
+
+			.imageContainer img {
+				width: 100%;
+			}
 
 			.image.fit {
 				margin: 2rem 0;
@@ -2983,7 +3044,7 @@ input, select, textarea {
 		@media screen and (max-width: 980px) {
 
 			header br {
-				display: none;
+				display: inline;
 			}
 
 		}
@@ -3234,7 +3295,7 @@ input, select, textarea {
 			width: 100%;
 			height: 100%;
 			background-color: #212931;
-			background-image: url("../../images/overlay.png"), linear-gradient(0deg, rgb(0, 213, 228, 0.5), rgba(0, 213, 228, 0.1)), url("../../images/overlay.png");
+			background-image: url("../../images/overlay.png"), linear-gradient(0deg, rgb(0, 213, 228, 0.7), rgba(0, 213, 228, 0.1)), url("../../images/overlay.png");
 			background-size: auto,								auto,														100% auto;
 			background-position: center,								center,														top center;
 			background-repeat: repeat,								no-repeat,													no-repeat;
@@ -3762,6 +3823,11 @@ input, select, textarea {
 		width: calc(100% - 4rem);
 		max-width: 72rem;
 		z-index: 2;
+	}
+
+	#bannerz {
+		padding: 0;
+		margin: 0;
 	}
 
 		#main > * {
