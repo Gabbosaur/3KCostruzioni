@@ -4,6 +4,10 @@
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 */
 
+$(window).on("load",function(){
+	$(".loader-wrapper").fadeOut("slow");
+  });
+
 (function ($) {
 
 	var $window = $(window),
@@ -304,3 +308,4 @@ for (var i = 0; i < btns.length; i++) {
 		this.className += " primary";
 	});
 }
+
