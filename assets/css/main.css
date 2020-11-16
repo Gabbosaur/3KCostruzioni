@@ -2714,6 +2714,9 @@ input[type="radio"]:focus + label:before {
   transition: transform 0.5s ease;
   height: 100%;
   object-fit: cover;
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .imageContainer:hover img {
