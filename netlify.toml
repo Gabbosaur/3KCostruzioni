@@ -2,3 +2,4 @@
 from = "http://3kcostruzioni.it"
 to = "https://3kcostruzioni.it"
 status = 301
+force = true
