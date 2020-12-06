@@ -1,1 +1,3 @@
+# http and https need separate rules if you don't force_ssl!
 http://3kcostruzioni.it/* https://3kcostruzioni.it/:splat 301!
+https://3kcostruzioni.it/* https://3kcostruzioni.it/:splat 301!
