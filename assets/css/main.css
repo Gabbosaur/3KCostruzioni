@@ -4130,13 +4130,12 @@ body.is-preload #intro:not(.hidden) + #header + #nav {
 /* Footer */
 
 #footer {
-  color: #717981;
   display: -moz-flex;
   display: -webkit-flex;
   display: -ms-flex;
   display: flex;
-  background-color: #f5f5f5; /*#f5f5f5*/
-  color: #909498;
+  background-color: #f5f5f5;
+  color: #636a70;
   cursor: default;
   position: relative;
   margin: 0 auto;
@@ -4148,11 +4147,11 @@ body.is-preload #intro:not(.hidden) + #header + #nav {
 #footer input,
 #footer select,
 #footer textarea {
-  color: #717981;
+  color: #636a70;
 }
 
 #footer a {
-  color: #717981;
+  color: #636a70;
   border-bottom-color: rgba(113, 121, 129, 0.5);
 }
 
@@ -4163,7 +4162,7 @@ body.is-preload #intro:not(.hidden) + #header + #nav {
 
 #footer strong,
 #footer b {
-  color: #717981;
+  color: #636a70;
 }
 
 #footer h1,
@@ -4172,7 +4171,7 @@ body.is-preload #intro:not(.hidden) + #header + #nav {
 #footer h4,
 #footer h5,
 #footer h6 {
-  color: #717981;
+  color: #636a70;
 }
 
 #footer blockquote {
