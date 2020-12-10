@@ -1,10 +1,4 @@
 [[redirects]]
-from = "https://3kcostruzioni.it"
-to = "www.3kcostruzioni.it"
-status = 301
-force = true
-
-[[redirects]]
 from = "http://3kcostruzioni.it"
 to = "https://www.3kcostruzioni.it"
 status = 301
