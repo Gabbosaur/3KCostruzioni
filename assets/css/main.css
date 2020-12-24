@@ -1,5 +1,5 @@
 @import url(fontawesome-all.min.css);
-@import url("https://fonts.googleapis.com/css?family=Merriweather:300,700,300italic,700italic|Source+Sans+Pro:900");
+@import url("https://fonts.googleapis.com/css?family=Merriweather:300,700,300italic,700italic|Source+Sans+Pro:900,400");
 
 /*
 	Massively by HTML5 UP
@@ -3524,6 +3524,18 @@ body.is-preload #wrapper.fade-in:before {
   border-bottom-color: #ffffff;
 }
 
+#intro .kkk {
+  font-size: 2em;
+  text-transform: lowercase;
+}
+
+#intro .costruzioni {
+  border-top: 5px solid;
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: .85em;
+}
+
 #intro input[type="submit"],
 #intro input[type="reset"],
 #intro input[type="button"],
@@ -3754,11 +3766,21 @@ body.is-preload #intro:not(.hidden) + #header + #nav {
   font-family: "Source Sans Pro", Helvetica, sans-serif;
   font-size: 2.25rem;
   font-weight: 900;
-  letter-spacing: 0.075em;
+  letter-spacing: 0.08em;
   line-height: 1;
   padding: 1rem 1.75rem;
-  text-transform: uppercase;
   visibility: visible;
+}
+
+#header .logo .kkk {
+  font-size: 2.5em;
+}
+
+#header .logo .costruzioni {
+  border-top: 4px solid;
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: .85em;
 }
 
 #header .logo:hover {
