@@ -4011,6 +4011,19 @@ body.is-preload #intro:not(.hidden) + #header + #nav {
   text-align: center;
 }
 
+#main .pic-servizi {
+  background-image: linear-gradient(rgba(255,255,255,0.9), rgba(255,255,255,0.9)), url("../../images/underconstruction.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#main .pic-contact {
+  background-image: linear-gradient(rgba(255,255,255,0.9), rgba(255,255,255,0.9)), url("../../images/contactus.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: right;
+}
+
 @media screen and (max-width: 1280px) {
   #main > .post {
     padding: 6rem 4rem 4rem 4rem;
